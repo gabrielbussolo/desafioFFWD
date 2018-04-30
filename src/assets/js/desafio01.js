@@ -26,4 +26,4 @@
         resultado.innerHTML = calculaFibo(limite)
         fibo.value = ""
     })
-})()
+})();

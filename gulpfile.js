@@ -33,7 +33,7 @@ gulp.task('sassCompileMinify', () => {
 */
 gulp.task('jsConcatUglify', function(){
   gulp.src('src/assets/js/*.js')
-    .pipe(concat('main.js'))
+    // .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('public/js'))
     .pipe(browserSync.stream())

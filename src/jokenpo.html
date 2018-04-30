@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,41 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Desafio FFWD</title>
 </head>
+
 <body>
     <div class="outer">
-    <main class="middle">
-        <div class="inner">
-            <header>
-                <img src="http://ffwd.com.br/app/themes/ffwd/assets/images/logo.png" alt="F/FWD logo">
-                <span>Jokenpo</span>
-            </header>
-            <nav>
-                <a href="/">Voltar</a>
-                <a href="/fibonacci.html">Fibonacci</a>
-            </nav>
-            <section>
-                <input type="text" name="fibo" placeholder="Informe um número"> <button>Vai!</button>
-            </section>
-        </div>
-    </main>
+        <main class="middle">
+            <div class="inner">
+                <header>
+                    <img src="http://ffwd.com.br/app/themes/ffwd/assets/images/logo.png" alt="F/FWD logo">
+                    <span>Jokenpo</span>
+                </header>
+                <nav>
+                    <a href="index.html">Voltar</a>
+                    <a href="fibonacci.html">Fibonacci</a>
+                </nav>
+                <section>
+                    <div>
+                        <label for="jogador1">Jogador 1:</label>
+                        <select name="jogador1" id="jogador1">
+                            <option value="pedra">Pedra</option>
+                            <option value="papel">Papel</option>
+                            <option value="tesoura">Tesoura</option>
+                        </select>
+                        <label for="jogador2">Jogador 2:</label>
+                        <select name="jogador2" id="jogador2">
+                            <option value="pedra">Pedra</option>
+                            <option value="papel">Papel</option>
+                            <option value="tesoura">Tesoura</option>
+                        </select>
+                    </div>
+                    <button id="vai">Vai!</button>
+                    <p id="resultado"></p>
+                </section>
+            </div>
+        </main>
     </div>
+    <script src="js/desafio02.js"></script>
 </body>
+
 </html>
