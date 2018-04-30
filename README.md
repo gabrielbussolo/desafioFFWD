@@ -25,9 +25,9 @@ O comando `gulp` ira criar uma pasta chamada `public` na raiz de `desafioFFWD`.
 Para visualizar o projeto basta abrir o arquivo `index.html` dentro de `public`
 
 ## Screenshots
-![Home](https://chrdc-challenge-gfpro.herokuapp.com/img/shot1.png)
-![Jokenpo](https://chrdc-challenge-gfpro.herokuapp.com/img/shot2.png)
-![Fibonacci](https://chrdc-challenge-gfpro.herokuapp.com/img/shot3.png)
+![Home](https://ffwd-challenge-gfpro.herokuapp.com/img/shot1.png)
+![Jokenpo](https://ffwd-challenge-gfpro.herokuapp.com/img/shot2.png)
+![Fibonacci](https://ffwd-challenge-gfpro.herokuapp.com/img/shot3.png)
 
 ## Oportunidades de melhoria
 
