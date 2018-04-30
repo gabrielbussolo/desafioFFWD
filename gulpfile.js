@@ -31,8 +31,9 @@ gulp.task('sassCompileMinify', () => {
   libs: https://github.com/gulp-community/gulp-concat
         https://github.com/terinjokes/gulp-uglify
 */
-gulp.task('jsConcatUglify', ()=>{
-  gulp.src('assets/js/*.js')
+gulp.task('jsConcatUglify', function(){
+  gulp.src('src/assets/js/*.js')
+    .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('public/js'))
     .pipe(browserSync.stream())

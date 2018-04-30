@@ -6,10 +6,14 @@
   "scripts": {
     "run": "gulp"
   },
-  "keywords": ["Desafio", "FFWD"],
+  "keywords": [
+    "Desafio",
+    "FFWD"
+  ],
   "author": "Gabriel Ferreira",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.24.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.1",

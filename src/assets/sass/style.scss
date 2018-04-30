@@ -1,0 +1,68 @@
+@import 'reset';
+
+body{
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    .outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      
+    .middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+      
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        /*whatever width you want*/
+    }
+    %btn{
+        color: #fff;
+        border: solid 2px #fff;
+        border-radius: 1em;
+        padding: 0.5em;
+        &:hover{
+            color: #f12445;
+            background-color: #fff;
+        }
+    }
+    main{
+        
+        div{
+            border-radius: 1em;
+            padding: 1em;
+            background-color: #f12445;
+            nav{
+                padding: 1em;
+                a{
+                    @extend %btn;
+                    text-decoration: none;
+                }
+                
+            }
+            section{
+                input{
+                    padding: 0.5em;
+                    border-radius: 1em;
+                    border: none;
+                    color: #333;
+                }
+                button{
+                    @extend %btn;
+                    background-color: #f12445;
+                }
+                textarea{
+                    margin-top: 0.5em;
+                    border-radius: 1em;
+                    border:none;
+                }
+            }
+        }
+    }
+}
