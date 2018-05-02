@@ -1,9 +1,17 @@
+/* Normalize Reset*/
 @import 'reset';
 
+/* Variaveis */
+$cor-base: #f12445;
+$bg-color: #333;
+$font-color: #fff;
+
+/* Estilo base*/
 body{
-    color: #fff;
-    background-color: #333;
+    color: $font-color;
+    background-color: $bg-color;
     text-align: center;
+    /* START - Centralizar div */
     .outer {
         display: table;
         position: absolute;
@@ -20,16 +28,16 @@ body{
         margin-left: auto;
         margin-right: auto;
         width: 450px;
-        /*whatever width you want*/
     }
+    /* END - Centralizar div */
     %btn{
-        color: #fff;
-        border: solid 2px #fff;
+        color: $font-color;
+        border: solid 2px $font-color;
         border-radius: 1em;
         padding: 0.5em;
         &:hover{
-            color: #f12445;
-            background-color: #fff;
+            color: $cor-base;
+            background-color: $font-color;
         }
     }
     main{
@@ -37,7 +45,7 @@ body{
         div{
             border-radius: 1em;
             padding: 1em;
-            background-color: #f12445;
+            background-color: $cor-base;
             nav{
                 padding: 1em;
                 a{
@@ -51,11 +59,11 @@ body{
                     padding: 0.5em;
                     border-radius: 1em;
                     border: none;
-                    color: #333;
+                    color: $bg-color;
                 }
                 button{
                     @extend %btn;
-                    background-color: #f12445;
+                    background-color: $cor-base;
                 }
                 textarea{
                     margin-top: 0.5em;
